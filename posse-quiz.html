@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posse-website</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/posse-quiz.css">
+</head>
+<body>
+    <header>
+        <div class="header-posse-img">
+            <img src="/img/logo.svg">
+        </div>
+        <ul class="header-menu-list">
+            <li><a href="https://posse-ap.github.io/sample-ph1-website/" target="_blank">POSSEとは</a></li>
+            <li><a href="http://127.0.0.1:5500/posse-quiz.html" target="_blank">クイズ</a></li>
+            <li class="header-menu-list-twittericon"><img  src="/img/icon/icon-twitter.svg" ></li>
+            <li class="header-menu-list-instagramicon" ><img src="/img/icon/icon-instagram.svg"></li>
+        </ul>
+    </header>
+    <main>
+        <div class="main-top">
+            <!-- <img class="main-top-img" src="/img/quiz/bg-hero.jpg"> -->
+            <div class="main-top-p">
+                <p class="main-top-p1">posse課題</p>
+                <p class="main-top-p2">ITクイズ</p>
+            </div>
+        </div>
+        <!-- ここからクイズ１-->
+        <div class="main-quiz-1">
+            <P class="main-quiz-Q">Q1</P>
+            <p class="main-quiz-problem">日本のIT人材が2030年には最大どれくらい不足すると言われ<br>ているでしょうか？</p>
+            <div class="main-quiz-img-box"><img class="main-quiz-1-img" src="/img/quiz/img-quiz01.png"></div>
+            <p class="main-quiz-A">A</p>
+            <ul class="main-quiz-option">
+                <li class="main-quiz-option-1" id="false0-0">約28万人</li>
+                <li class="main-quiz-option-2" id="correct-0" onclick="onclick(0)">約79万人</li>
+                <li class="main-quiz-option-3" id="false1-0">約183万人</li>
+            </ul>
+            <div class="correctbox" id="correctbox-0">
+                <h4>正解！！</h4>
+                <p>A 約79万人</p>
+            </div>
+            <div class="falsebox" id="falsebox-0">
+                <h4>不正解...</h4>
+                <p>A 約79万人</p>
+            </div>
+            <aside class="quote"><img src="/img/icon/icon-note.svg">
+                経済産業省　2019年3月 IT 人材需給に関する調査
+            </aside>
+        </div>
+        <!-- ここからクイズ２ -->
+        <div class="main-quiz-2">
+            <p class="main-quiz-Q">Q2</p>
+            <p class="main-quiz-problem">既存業界のビジネスと、先進的なテクノロジーを結びつけて<br>生まれた、新しいビジネスのことをなんと言うでしょう？</p>
+            <div class="main-quiz-img-box"><img class="main-quiz-2-img" src="/img/quiz/img-quiz02.png"></div>
+            <p class="main-quiz-A">A</p>
+            <ul class="main-quiz-option">
+                <li class="main-quiz-option-1" id="false0-1">INTECH</li>
+                <li class="main-quiz-option-2" id="false1-1">BIZZTECH</li>
+                <li class="main-quiz-option-3" id="correct-1">X-TECH</li>
+            </ul>
+            <div class="correctbox" id="correctbox-1">
+                <h4>正解！！</h4>
+                <p>A X-TECH</p>
+            </div>
+            <div class="falsebox" id="falsebox-1">
+                <h4>不正解...</h4>
+                <p>A X-TECH</p>
+            </div>
+        </div>
+        <!-- ここからクイズ3 -->
+        <div class="main-quiz-3">
+            <p class="main-quiz-Q">Q3</p>
+            <p class="main-quiz-problem">IoTとは何の略でしょう？</p>
+            <div class="main-quiz-img-box"><img class="main-quiz-3-img" src="/img/quiz/img-quiz03.png"></div>
+            <p class="main-quiz-A">A</p>
+            <ul class="main-quiz-option">
+                <li class="main-quiz-option-1" id="correct-2">Internet of Things</li>
+                <li class="main-quiz-option-2" id="false0-2">Integrate into Technology</li>
+                <li class="main-quiz-option-3" id="false1-2">Information on Tool</li>
+            </ul>
+            <div class="correctbox" id="correctbox-2">
+                <h4>正解！！</h4>
+                <p>A Internet of Things</p>
+            </div>
+            <div class="falsebox" id="falsebox-2">
+                <h4>不正解...</h4>
+                <p>A Internet of Things</p>
+            </div>
+        </div>
+        <!-- ここからクイズ4 -->
+        <div class="main-quiz-4">
+            <p class="main-quiz-Q">Q4</p>
+            <p class="main-quiz-problem">イギリスのコンピューター科学者であるギャビン・ウッド氏<br>が提唱した、ブロックチェーン技術を活用した「次世代分散<br>型インターネット」のことをなんと言うでしょう？</p>
+            <div class="main-quiz-img-box"><img class="main-quiz-4-img" src="/img/quiz/img-quiz04.png"></div>
+            <p class="main-quiz-A">A</p>
+            <ul class="main-quiz-option">
+                <li class="main-quiz-option-1" id="correct-3">Society 5.0</li>
+                <li class="main-quiz-option-2" id="false0-3">CiPhy</li>
+                <li class="main-quiz-option-3" id="false1-3">SDGs</li>
+            </ul>
+            <div class="correctbox" id="correctbox-3">
+                <h4>正解！！</h4>
+                <p>A Society 5.0</p>
+            </div>
+            <div class="falsebox" id="falsebox-3">
+                <h4>不正解...</h4>
+                <p>A Society 5.0</p>
+            </div>
+            <aside class="quote"><img src="/img/icon/icon-note.svg">
+                Society5.0 - 科学技術政策 - 内閣府
+            </aside>
+        </div>
+        <!-- ここからクイズ5 -->
+        <div class="main-quiz-5">
+            <p class="main-quiz-Q">Q5</p>
+            <P class="main-quiz-problem">イギリスのコンピューター科学者であるギャビン・ウッド氏<br>が提唱した、ブロックチェーン技術を活用した「次世代分散<br>型インターネット」のことをなんと言うでしょう？</P>
+            <div class="main-quiz-img-box"><img class="main-quiz-5-img" src="/img/quiz/img-quiz05.png"></div>
+            <p class="main-quiz-A">A</p>
+            <ul class="main-quiz-option">
+                <li class="main-quiz-option-1" id="correct-4">Web 3.0</li>
+                <li class="main-quiz-option-2" id="false0-4">NFT</li>
+                <li class="main-quiz-option-3" id="false1-4">メタバース</li>
+            </ul>
+            <div class="correctbox" id="correctbox-4">
+                <h4>正解！！</h4>
+                <p>A Web 3.0</p>
+            </div>
+            <div class="falsebox" id="falsebox-4">
+                <h4>不正解...</h4>
+                <p>A Web 3.0</p>
+            </div>
+        </div>
+        <!-- ここからクイズ６ -->
+
+    </main>
+</body>
+<script type="text/javascript" src="/posse-quiz.js"></script>
+</html>
